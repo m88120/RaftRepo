@@ -10,8 +10,19 @@ Raft.Test
   -  Raft.Test.Tests/             # Unit tests using xUnit + Moq
   -  appsettings.json             # Configuration file
 
+## .NET SDK Compatibility Issue
+  -  Verify .NET SDK is installed
+ -  Run: dotnet --version
+ -  Installed SDKs:
+ -  8.0.101
+ -  8.0.411
 
-
+-  Update global.json to use an installed SDK version
+{
+  "sdk": {
+    "version": "8.0.204"
+  }
+}
 ###  Prerequisites
 
  [.NET SDK 8.0+](https://dotnet.microsoft.com/enus/download)
